@@ -6,8 +6,7 @@
 		  "outDir": "./dist",
 		  "esModuleInterop": true,
 		  "target": "es2019",
-		  "module": "commonjs",
-
+		  "module": "Node16",
 		  "emitDecoratorMetadata": true,
 		  "experimentalDecorators": true,
 		  "declaration": true,
