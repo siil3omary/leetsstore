@@ -1,0 +1,7 @@
+{
+	"buildCommand": "yarn install && yarn build",
+ "outputDirectory": ".medusa/server",
+	"devCommand": "NODE_ENV=development yarn start",
+	"installCommand": "yarn install",
+	"framework": null
+  }

@@ -12,15 +12,18 @@
     "headless",
     "medusa"
   ],
-  "scripts": {
-    "build": "medusa build",
-    "seed": "medusa exec ./src/scripts/seed.ts",
-    "start": "medusa start",
-    "dev": "medusa develop",
-    "test:integration:http": "TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
-    "test:integration:modules": "TEST_TYPE=integration:modules NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit",
-    "test:unit": "TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit"
-  },
+"scripts": {
+  "build": "tsc",
+  "start": "medusa start"
+},
+"devDependencies": {
+  "@babel/cli": "^7.14.3",
+  "@babel/core": "^7.14.3",
+  "@babel/preset-env": "^7.14.4",
+  "@babel/preset-typescript": "^7.14.5",
+  "babel-preset-medusa-package": "^1.1.13",
+  "typescript": "^4.9.5"
+},
   "dependencies": {
     "@medusajs/admin-sdk": "2.7.1",
     "@medusajs/cli": "2.7.1",
