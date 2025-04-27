@@ -1,12 +1,13 @@
 {
 	
-		"compilerOptions": {
+	"compilerOptions": {
+		"moduleResolution": "node16",
 		  "rootDir": "./src",
 		  "outDir": "./dist",
 		  "esModuleInterop": true,
 		  "target": "es2019",
 		  "module": "commonjs",
-		  "moduleResolution": "node",
+
 		  "emitDecoratorMetadata": true,
 		  "experimentalDecorators": true,
 		  "declaration": true,
